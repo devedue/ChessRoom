@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/text_item"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+    <ImageView
+        android:id="@+id/image_message_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_rec"/>
+
+    <LinearLayout
+        android:id="@+id/message_items"
+        android:layout_below="@+id/image_message_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/custom_gray">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <TextView
+            android:id="@+id/text_message"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_message_bottom"
+        android:layout_below="@+id/message_items"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_rec_bottom"/>
+
+</RelativeLayout>

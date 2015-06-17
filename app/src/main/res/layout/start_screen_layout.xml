@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/ip_text_box"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:inputType="textImeMultiLine"
+        android:hint="IP (Not Required when creating server)"/>
+    <EditText
+        android:id="@+id/name_text_box"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ip_text_box"
+        android:layout_centerHorizontal="true"
+        android:ems="10" android:inputType="textPersonName"
+        android:hint="Name"/>
+    <EditText
+        android:id="@+id/port_text_box"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ip_text_box"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Port Number"/>
+    <Button
+        android:id="@+id/create_server_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/port_text_box"
+        android:layout_alignStart="@+id/port_text_box"
+        android:layout_below="@+id/port_text_box"
+        android:text="Create"/>
+    <Button
+        android:id="@+id/join_server_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/port_text_box"
+        android:layout_alignRight="@+id/port_text_box"
+        android:layout_below="@+id/port_text_box"
+        android:text="Join"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" android:layout_above="@+id/name_text_box"
+        android:background="@drawable/start_background"/>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/myip_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" android:text="MyIP"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <ListView
+        android:id="@+id/list_in_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/myip_text"
+        android:background="#cccc"
+        android:choiceMode="singleChoice" android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" tools:context=".NavigationDrawerFragment"/>
+
+</RelativeLayout>
